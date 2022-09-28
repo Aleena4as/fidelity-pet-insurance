@@ -1,0 +1,26 @@
+.optionWithImage {
+   @include flex(center, center, row);
+   margin: 22px 0;
+   .imageOption {
+      cursor: pointer;
+      width: 173px;
+      height: 144px;
+      border-radius: 14px;
+      background-color: #fff;
+      @include flex(center, space-evenly, column);
+      padding: 15px;
+      &:first-child {
+         margin-right: 14px;
+      }
+
+    
+      p {
+         margin-bottom: 0;
+         @include align(center);
+      }
+      &.selectedBox {
+         border: solid 1.5px #4a5393;
+         background-color: #f7f5ff;
+      }
+   }
+}

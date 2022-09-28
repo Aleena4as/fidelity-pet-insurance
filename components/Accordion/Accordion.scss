@@ -1,0 +1,100 @@
+.accordionContainer {
+   //  @include flex(center, center, row);
+
+   padding: 0 20px 100px;
+   .contentWrap {
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .question {
+      width: auto;
+      @media (min-width: 1366px) {
+         width: 630px;
+         max-width: 630px;
+         margin-right: 10px;
+      }
+      padding: 22px;
+      border: 2px solid #eae6eb;
+      margin-bottom: 18px;
+      border-radius: 0.25rem;
+      // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      border: solid 1.5px #e9eaee;
+      .answer {
+         @include text-font('Glory-Light', 16px, #222);
+         @include text-style(300, normal, 0.28px);
+         line-height: 1.29;
+         margin-top: 10px;
+         margin-bottom: 0;
+         height: 0;
+         transition: height 0.5s ease-in;
+      }
+   }
+   .expandedQuestion {
+      .answer {
+         height: auto;
+      }
+   }
+   .question header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+   }
+
+   .accordionBtn {
+      background: transparent;
+      border-color: transparent;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #b4345c;
+      cursor: pointer;
+      margin-left: 1rem;
+      align-self: center;
+      min-width: 2rem;
+   }
+
+   .question-title {
+      cursor: pointer;
+      margin-bottom: 0;
+      @include text-font('Glory-SemiBold', 18px, #214079);
+      @include text-style(600, normal, 0.36px);
+   }
+   .pt-150 {
+      @media (min-width: 768px) {
+         // padding-top: 100px;
+      }
+      @media (min-width: 1025px) {
+         // padding-top: 150px;
+      }
+
+      .info {
+         width: 100%;
+      }
+   }
+
+   .questionBg {
+      position: relative;
+      &::after {
+         content: url(/images/version2/splash/questionSplash.svg);
+         position: absolute;
+         top: 0;
+         right: 166px;
+         @media (max-width: 767px) {
+            top: 40px;
+            right: 55px;
+         }
+      }
+   }
+   .scrollFaqs {
+      height: 370px;
+      max-height: 384px;
+      // overflow-y: scroll; //enable when more than 4 faq is added
+   }
+}

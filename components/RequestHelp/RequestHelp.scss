@@ -1,0 +1,36 @@
+.react-responsive-modal-modal {
+   position: relative;
+   border-radius: 23px;
+   max-width: 517px;
+
+   @media (max-width: 767px) {
+      width: 340px;
+      margin: 10px !important;
+   }
+
+   .imageOnTop {
+      position: absolute;
+      top: -105px;
+      left: 0;
+      @media (max-width: 767px) {
+         top: -84px;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.requestHelpWrap {
+   margin: 24px 15px;
+   .requestBtn {
+      border-radius: 100px;
+      background-color: #9a55fb;
+      outline: none;
+      border: none;
+      height: 48px;
+      @include text-font('Glory-SemiBold', 16px, #fff);
+      @include text-style(600, normal, normal);
+      @include align(center);
+   }
+}

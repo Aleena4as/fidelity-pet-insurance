@@ -1,0 +1,25 @@
+.button-wrap {
+   button {
+      width: 170px;
+      height: 48px;
+      opacity: 0.6;
+      border-radius: 100px;
+      border: solid 1px #9a55fb;
+      background-color: #fff;
+      @include text-font('Glory-Regular', 14px, #000);
+      @include text-style(normal, normal, 0.28px);
+      @include align(center);
+      &:hover {
+         opacity: 1;
+         background-color: #9a55fb;
+         color: #fff;
+      }
+   }
+   &.active {
+      button {
+         opacity: 1;
+         background-color: #9a55fb;
+         color: #fff;
+      }
+   }
+}

@@ -1,0 +1,21 @@
+@mixin flex($align, $justify, $direct: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direct;
+}
+
+@mixin text-font($family, $size, $color: #000) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+@mixin text-style($weight, $normal, $spacing){
+  font-weight: $weight;
+  font-stretch: $normal;
+  line-height: $normal;
+  letter-spacing: $spacing;
+}
+@mixin align($align) {
+  text-align: $align;
+}

@@ -1,0 +1,74 @@
+.statusDetailPanel {
+   @include flex(center, center, column);
+   max-width: 573px;
+   width: auto;
+   @media (min-width: 767px) {
+      padding: 0 100px 15px;
+   }
+   border-radius: 32px;
+   background-color: #fff;
+   padding: 15px;
+   padding-top: 0;
+   img {
+      margin-bottom: 15px;
+   }
+   p.noteTitle {
+      @include text-font('GloriaHallelujah-Regular', 20px, #333);
+      @include text-style(normal, normal, 0.2px);
+      @include align(center);
+      margin-bottom: 12px;
+   }
+
+   p.note {
+      @include text-font('Glory-Light', 16px, #333);
+      @include text-style(300, normal, 0.18px);
+      @include align(center);
+      line-height: 1.39;
+      margin-bottom: 5px;
+      @media (min-width: 767px) {
+         min-width: 400px;
+      }
+      span {
+         font-weight: bold;
+      }
+   }
+   .gifBg {
+      width: 108px;
+      height: 108px;
+      background-image: url(/images/version2/thanksGifBg.svg);
+      background-repeat: no-repeat;
+      @include flex(center, center, column);
+      margin-bottom: 12px;
+
+      img {
+         border-radius: 50%;
+         width: 85px;
+         height: 88px;
+         margin-bottom: 0;
+      }
+   }
+   button {
+      width: auto;
+      height: 58px;
+      outline: none;
+      margin: 10px;
+      @include text-font('Glory-SemiBold', 16px, #fff);
+      @include text-style(600, normal, 1px);
+      @include align(center);
+      @media (min-width: 768px) {
+         width: 125px;
+         height: 58px;
+         flex-direction: row;
+      }
+   }
+   .nextButton {
+      width: 160px;
+      height: 45px;
+      border-radius: 70px;
+      background-color: #9a55fb;
+      border: solid 1px #9a55fb;
+  }
+   .nextButton:disabled {
+      opacity: 0.6;
+   }
+}

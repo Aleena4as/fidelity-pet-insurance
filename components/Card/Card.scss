@@ -1,0 +1,58 @@
+.cardContainer {
+   border-radius: 33px;
+   background-color: #f5fafe;
+   padding: 48px 10px;
+   margin: 0 20px;
+   width: auto;
+   position: relative;
+   @media (max-width: 991px) and (min-width: 768px) {
+      max-width: 578px;
+      margin: 0 auto;
+   }
+   @media (min-width: 992px) {
+      max-width: 1070px;
+      margin: 0 auto;
+      padding: 48px 20px;
+   }
+   @media (max-width: 1025px) and (min-width: 1024px) {
+      max-width: 700px;
+   }
+   // &::after {
+   //    content: url(/images/version2/climbingCat.svg);
+   //    position: absolute;
+   //    top: 0;
+   //    left: -96px;
+   // }
+   &::after {
+      content: url(/images/version2/plainBoneRes.svg);
+      position: absolute;
+      top: 54px;
+      right: -19px;
+
+      @media (min-width: 767px) {
+         content: url(/images/version2/plainBone.svg);
+         top: 170px;
+         right: -60px;
+      }
+   }
+}
+.crawlingCat {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 135px;
+   z-index: 1;
+   img {
+      position: absolute;
+      top: 75px;
+      left: -116px;
+      @media (max-width: 991px) and (min-width: 768px) {
+         left: -88px;
+         width: 125px;
+      }
+   }
+   &.stopScrolling {
+      position: absolute;
+      bottom: 400px;
+      top: unset;
+   }
+}

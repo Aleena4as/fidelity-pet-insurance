@@ -1,0 +1,146 @@
+.quoteWrap {
+   width: auto;
+   padding-bottom: 20px;
+   @media (min-width: 768px) {
+      width: 600px;
+      max-width: 600px;
+      margin: 0 auto;
+   }
+   border-radius: 49px;
+   // @media (max-width: 768px) {
+   //    border-radius: 16px;
+   // }
+   background-color: #fff;
+   .quoteHead {
+      border-radius: 49px 49px 0 0;
+      margin-bottom: 42px;
+      // @media (max-width: 768px) {
+      //    border-radius: 16px 16px 0 0;
+      // }
+      background-image: url("/images/version2/quickSummaryBg.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 30px;
+      background-position: center;
+      .headPrivate {
+         @include flex(center, space-between, row);
+         margin-bottom: 38px;
+         @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+         }
+         .quoteNumber {
+            margin-bottom: 0;
+            @include text-font("Glory-Regular", 16px, #fff);
+            @include text-style(normal, normal, 0.32px);
+
+            span {
+               font-family: "Glory-ExtraBold";
+            }
+         }
+         .quotePrint {
+            cursor: pointer;
+            margin-bottom: 0;
+            @include text-font("Glory-Medium", 16px, #fff);
+            @include text-style(500, normal, 0.16px);
+            @media (max-width: 768px) {
+               margin-bottom: 30px;
+            }
+            a {
+               @include text-font("Glory-Medium", 16px, #fff);
+               @include text-style(500, normal, 0.16px);
+               text-decoration: none;
+            }
+            span img {
+               margin-right: 8px;
+            }
+         }
+      }
+      .headDetails {
+         @include flex(center, center, column);
+         @include align(center);
+         .planTotal {
+            margin-bottom: 12px;
+            @include text-font("Glory-Medium", 30px, #fff);
+            @include text-style(800, normal, 0.6px);
+            @media (max-width: 767px) {
+               font-size: 24px;
+            }
+
+            span {
+               font-family: "Glory-ExtraBold";
+            }
+         }
+         .planDescription {
+            margin-bottom: 8px;
+            @include text-font("Glory-Bold", 18px, rgba(255, 255, 255, 0.95));
+            @include text-style(bold, normal, 0.36px);
+            span {
+               font-family: "Glory-Medium";
+            }
+            @media (max-width: 768px) {
+               font-size: 16px;
+            }
+         }
+         .planVAT {
+            @include text-font("Glory-Bold", 18px, rgba(255, 255, 255, 0.95));
+            @include text-style(bold, normal, 0.36px);
+            span {
+               font-family: "Glory-Medium";
+            }
+            @media (max-width: 768px) {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+   .quoteBody {
+      margin-bottom: 15px;
+      border-radius: 0 0 49px 49px;
+      .form-group {
+         margin: 20px;
+      }
+   }
+}
+.buyPolicyWrap {
+   width: auto;
+   margin-top: 49px;
+   padding-bottom: 20px;
+   @media (min-width: 768px) {
+      width: 600px;
+      max-width: 600px;
+      margin: 49px auto 0;
+   }
+
+   .continueButton {
+      // margin-bottom: 25px;
+      button {
+         margin: auto;
+         &:disabled {
+            opacity: 0.3;
+         }
+      }
+   }
+}
+.requestHelpWrap {
+   display: flex;
+   flex-direction: column;
+   @media (min-width: 768px) {
+      min-width: 350px;
+   }
+   width: auto;
+   p {
+      text-align: center;
+   }
+   button {
+      border-radius: 15px;
+      background-color: blueviolet;
+   }
+}
+.optionalNote {
+   @include text-font("Glory-Bold", 18px, #ffb703);
+   @include text-style(bold, normal, 0.36px);
+   text-align: center;
+   margin-top: 20px;
+   padding: 0 20px;
+}

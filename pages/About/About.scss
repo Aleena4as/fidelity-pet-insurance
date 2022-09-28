@@ -1,0 +1,57 @@
+.aboutContainer {
+   overflow-x: hidden;
+   padding: 57px 0 50px;
+   @media (min-width: 768px) {
+      padding-left: 85px;
+   }
+   .contentWrap {
+      @include flex(self-start, center, column);
+      height: 100%;
+      @media (max-width: 767px) {
+         padding: 22px;
+         align-items: center;
+      }
+      .description {
+         @include text-font('Glory-Light', 19px, #333);
+         @include text-style(300, normal, normal);
+         line-height: 1.42;
+         max-width: 547px;
+         @media (max-width: 767px) {
+            text-align: center;
+            font-size: 16px;
+         }
+      }
+   }
+   .aboutImage {
+      // max-height: 673px;
+      height: auto;
+      margin-bottom: 33px;
+      @media (max-width: 768px) and (min-width: 1200px) {
+         max-height: 650px;
+      }
+      @media (max-width: 767px) {
+         // max-height: 340px;
+         height: auto;
+         margin-left: 22px;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .scrollDown {
+      display: flex;
+      justify-content: flex-start;
+      cursor: pointer;
+      animation: scrollAnimation 2s linear 0s infinite;
+      @media screen and (max-width: 992px) {
+         justify-content: center;
+      }
+      @media (min-width: 993px) {
+         position: relative;
+      }
+      img {
+         margin-left: -20px;
+      }
+   }
+}

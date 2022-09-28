@@ -1,0 +1,265 @@
+.table-container {
+   width: 100%;
+   overflow-x: auto;
+}
+.responsive-table {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+@media screen and (min-width: 600px) {
+   .responsive-table {
+      width: auto;
+   }
+}
+.responsive-table thead {
+   visibility: hidden;
+   background: #fafafa;
+}
+@media screen and (min-width: 600px) {
+   .responsive-table thead {
+      visibility: visible;
+   }
+}
+.responsive-table tr {
+   border: 1px solid #ddd;
+   border-bottom: 2px solid #ddd;
+   margin-bottom: 30px;
+   display: grid;
+}
+@media screen and (min-width: 600px) {
+   .responsive-table tr {
+      display: table-row;
+      border-bottom-width: 1px;
+      margin-bottom: 0;
+      width: 250px;
+      max-width: 250px;
+   }
+   .responsive-table tr:nth-child(n) {
+      background: #ebf2ff;
+      border: none;
+   }
+}
+
+.responsive-table th,
+.responsive-table td {
+   padding: 22px 8px 10px;
+   text-align: center;
+}
+.responsive-table th {
+   @media screen and (min-width: 600px) {
+      padding: 30px 8px;
+   }
+}
+.responsive-table th {
+   text-transform: uppercase;
+   font-size: 15px;
+   min-width: 250px;
+   display: inline-block;
+}
+.responsive-table td {
+   display: block;
+   text-align: right;
+   font-size: 13px;
+   background-color: #ffffff;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+   border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.responsive-table tr td:first-child {
+   text-align: center;
+}
+@media screen and (min-width: 600px) {
+   .responsive-table tr td:first-child {
+      text-align: left;
+   }
+}
+
+.responsive-table td:last-child {
+   border-bottom: none;
+}
+@media screen and (min-width: 600px) {
+   tbody {
+      display: flex;
+   }
+   .responsive-table tr {
+      td {
+         //  display: table-cell;
+         text-align: center;
+         font-size: 14px;
+         // border-bottom: none;
+         min-width: 180px;
+         // @include text-font('Glory-Medium', 14px, #333);
+         // @include text-style(500, normal, 0.56px);
+         // line-height: 2.79;
+      }
+      &:first-child td {
+         text-align: left;
+      }
+   }
+}
+.responsive-table td:before {
+   content: attr(data-label);
+   float: left;
+   text-transform: uppercase;
+   font-weight: bold;
+   width: 206px;
+   text-align: left;
+
+   @include text-font('Glory-Regular', 12px, #333);
+   @include text-style(normal, normal, 0.24px);
+   @include align(left);
+   line-height: 1.5;
+}
+.responsive-table td.mainTr:before {
+   @include text-font('Glory-Bold', 14px, #333);
+   @include text-style(500, normal, 0.56px);
+   @include align(left);
+   line-height: 1.29;
+   // @media screen and (min-width: 600px) {
+   //    font-size: 16px;
+   // }
+}
+@media screen and (min-width: 600px) {
+   .responsive-table td:before {
+      content: '';
+      display: none;
+   }
+}
+
+//   extra styling
+.mainTr {
+   @include text-font('Glory-Bold', 16px, #333);
+   @include text-style(bold, normal, 0.16px);
+   @include align(left);
+   line-height: 1.59;
+   min-height: 25px;
+   font-size: 16px !important;
+   padding-bottom: 0 !important;
+   border-bottom: none !important;
+   &:last-child {
+      padding-bottom: 10px !important;
+   }
+}
+.subTr {
+   @include text-font('Glory-Regular', 12px, #333);
+   @include text-style(normal, normal, 0.24px);
+   // line-height: 3.25;
+   margin-bottom: 0.05px;
+}
+@media screen and (min-width: 600px) {
+   thead tr {
+      th {
+         &:first-child {
+            min-width: 250px;
+            padding-left: 24px;
+         }
+      }
+   }
+   tbody tr:first-child {
+      width: 250px;
+      td {
+         padding-left: 24px;
+         background-color: #ebf2ff;
+      }
+   }
+   thead tr th:nth-child(n) {
+      background-color: #ffb703;
+   }
+   thead tr th:nth-child(2n) {
+      background-color: #9a55fb;
+   }
+   thead tr th:nth-child(3n) {
+      background-color: rgba(154, 85, 251, 0.8);
+   }
+   thead tr th:nth-child(4n) {
+      background-color: rgba(174, 119, 252, 0.8);
+   }
+   .waitingPeriod {
+      @include text-font('Glory-Light', 14px, #333);
+      @include text-style(300, normal, 0.28px);
+      line-height: 1.43;
+      @include align(center);
+   }
+   .titleMain {
+      @include text-font('GloriaHallelujah-Regular', 15px, #fff);
+      @include text-style(normal, normal, 0.3px);
+      line-height: 1.47;
+      // padding-bottom: 0 !important;
+   }
+   .titleSub {
+      color: rgba(255, 255, 255, 0.8);
+      @include text-font('Glory-Medium', 16px, rgba(255, 255, 255, 0.8));
+      @include text-style(500, normal, 0.32px);
+      line-height: 1.56;
+      padding-top: 0 !important;
+      font-size: 16px !important;
+   }
+}
+
+.planTitleMob {
+   @include text-font('GloriaHallelujah-Regular', 15px, #fff);
+   @include text-style(normal, normal, 0.3px);
+   line-height: 1.47;
+}
+tbody tr:nth-child(2n) .planTitleMob {
+   background-color: #9a55fb;
+}
+tbody tr:nth-child(3n) .planTitleMob {
+   background-color: rgba(154, 85, 251, 0.8);
+}
+tbody tr:nth-child(4n) .planTitleMob {
+   background-color: rgba(174, 119, 252, 0.8);
+}
+.responsive-table tr td {
+   &:nth-last-of-type(1) {
+      text-align: center;
+   }
+   &:nth-last-of-type(2) {
+      text-align: center;
+   }
+}
+.responsive-table tr:first-child {
+   td:nth-last-of-type(2) {
+      text-align: left;
+   }
+   td:nth-last-of-type(1) {
+      text-align: left;
+   }
+}
+.responsive-table tbody tr {
+   td:first-child {
+      padding-top: 18px;
+   }
+   td:last-child {
+      padding-bottom: 42px;
+   }
+}
+@media screen and (min-width: 600px) {
+   thead tr:first-child th:first-child {
+      border-top-left-radius: 15px;
+   }
+   thead tr:first-child th:last-child {
+      border-top-right-radius: 15px;
+   }
+}
+td[data-label] {
+   @include text-font('Glory-Medium', 14px, #333);
+   @include text-style(500, normal, 0.56px);
+}
+td[data-label='Vet Expenses'] {
+   padding-top: 46px;
+}
+td {
+   height: 60px;
+}
+.mainTr {
+   height: 45px;
+}
+tbody tr:last-child td {
+   border-right: none;
+}
+tbody tr:first-child td {
+   border-right: none;
+}

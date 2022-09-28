@@ -1,0 +1,28 @@
+.uploadPetsForm {
+   margin: 0 10px;
+   width: auto;
+   @media (min-width: 767px) {
+      max-width: 982px;
+   }
+   @media (min-width: 991px) {
+      margin: 0 150px;
+   }
+   @media (max-width: 1025px) and (min-width: 1024px) {
+      margin: 0 55px;
+   }
+}
+.holderInfoForm,
+.petsInfoForm {
+   @media (min-width: 991px) {
+      margin: 0 150px;
+   }
+   @media (max-width: 1025px) and (min-width: 1024px) {
+      margin: 0 55px;
+   }
+   @media (min-width: 767px) {
+      max-width: 982px;
+   }
+}
+// .holderInfoForm {
+//    padding-top: 38px;
+// }

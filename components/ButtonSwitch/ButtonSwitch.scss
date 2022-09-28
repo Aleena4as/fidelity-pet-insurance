@@ -1,0 +1,30 @@
+.switchButton {
+   background-color: #ffffff;
+   padding: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   width: fit-content;
+   margin: 0 auto;
+   margin-bottom: 38px;
+   flex-direction: column;
+   @media (min-width: 768px) {
+      flex-direction: row;
+   }
+   .switchButton-btn {
+      width: 225px;
+      height: 49px;
+      flex-grow: 0;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &.btn-active {
+         border-radius: 10px;
+         background-color: #9a55fb;
+         color: #ffffff;
+      }
+   }
+}

@@ -1,0 +1,95 @@
+.infoLoader {
+   width: 100%;
+   @media (min-width: 767px) {
+      width: auto;
+      min-width: 500px;
+   }
+}
+
+.noticeMessage {
+   margin-top: 38px;
+   margin-bottom: 30px;
+   p {
+      font-family: 'GloriaHallelujah-Regular';
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      text-align: center;
+      line-height: 1.36;
+   }
+}
+.successPanel {
+   font-family: 'Glory-Regular';
+   font-size: 20px;
+   color: green;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: 0.28px;
+   text-align: center;
+   line-height: 1.36;
+}
+.capturedInfoWrap {
+   &::after {
+      // content: url(/images/version2/animations/walkingCat.gif);
+      position: absolute;
+      bottom: -110px;
+      animation: linear infinite;
+      animation-name: run;
+      animation-duration: 10s;
+      -webkit-animation: linear infinite;
+      -webkit-animation-name: run;
+      -webkit-animation-duration: 10s;
+      z-index: -1;
+   }
+}
+@keyframes run {
+   0% {
+      right: -1500px;
+      -webkit-transform: rotateY(0deg);
+   }
+
+   100% {
+      right: 200%;
+      -webkit-transform: rotateY(0deg);
+   }
+}
+
+// #walkingCat {
+//    bottom: 15%;
+//    position: absolute;
+//    animation: linear infinite;
+//    animation-name: run;
+//    animation-duration: 10s;
+//    -webkit-animation: linear infinite;
+//    -webkit-animation-name: run;
+//    -webkit-animation-duration: 10s;
+// }
+
+// @keyframes run {
+//    0% {
+//       left: 0;
+//       -webkit-transform: rotateY(0deg);
+//    }
+
+//    50% {
+//       left: 82%;
+//       -webkit-transform: rotateY(0deg);
+//    }
+
+//    51% {
+//       -webkit-transform: rotateY(180deg);
+//    }
+
+//    99% {
+//       left: 0;
+//       -webkit-transform: rotateY(180deg);
+//    }
+
+//    100% {
+//       left: 0;
+//       -webkit-transform: rotateY(0deg);
+//    }
+// }

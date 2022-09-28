@@ -1,0 +1,167 @@
+.recognitionForm {
+   #petBoxOverlay {
+      position: relative;
+      width: auto;
+      height: 190px;
+      background: rgba(58, 48, 72, 0.5);
+      border-radius: 24px;
+      max-width: 346px;
+      margin-bottom: 48px;
+      .detectedPetBox {
+         position: absolute;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         opacity: 1;
+         img {
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
+            object-fit:fill;
+            // filter: brightness(0.8);
+         }
+      }
+   }
+   #petBoxOverlay:before,
+   #petBoxOverlay:after,
+   #petBoxOverlay > :first-child:before,
+   #petBoxOverlay > :first-child:after {
+      position: absolute;
+      content: url(/images/version2/borderCapture.svg);
+      z-index: 1;
+   }
+   #petBoxOverlay:before {
+      top: 22px;
+      left: 25px;
+      transform: rotate(-90deg);
+   }
+   #petBoxOverlay:after {
+      top: 22px;
+      right: 25px;
+      transform: rotate(0deg);
+   }
+   #petBoxOverlay > :first-child:before {
+      bottom: 22px;
+      right: 25px;
+      transform: rotate(90deg);
+   }
+   #petBoxOverlay > :first-child:after {
+      bottom: 22px;
+      left: 25px;
+      transform: rotate(180deg);
+   }
+   .recievedOpts {
+      margin: 22px 0;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      @media (min-width: 768px) {
+         grid-template-rows: 84px 84px;
+         grid-template-columns: 1fr 1fr;
+      }
+      .breedOpions {
+         @media (min-width: 768px) {
+            margin: 0 10px;
+         }
+         cursor: pointer;
+
+         P {
+            margin-bottom: 0;
+            @include text-font('Glory-Medium', 16px, #333);
+            @include text-style(500, normal, 0.16px);
+            @include align(center);
+         }
+         .otherOptions{
+            @include text-font('Glory-Regular', 16px, rgba(102, 102, 102, 0.95));
+            @include text-style(normal, normal, 0.16px);
+            @include align(center);
+         }
+         &.custom {
+            padding: 10px;
+            @include flex(center, center, row);
+            border-radius: 12px;
+            // border: solid 2.3px rgba(50, 56, 98, 0.2);
+            background-color: #f7f5ff;
+            background-color: #fff;
+            box-shadow: 9px 7px 2px 0px rgb(154 85 251 / 10%);
+            height: 56px;
+            @media (max-width: 767px) {
+               margin-bottom: 20px;
+            }
+         }
+         &.active {
+            border: solid 1.5px #4a5393;
+            background-color: #f7f5ff;
+         }
+         &.customBreed {
+            position: relative;
+            height: 56px;
+            &.customActive {
+               .form-group {
+                  .form-control {
+                     border: solid 1.5px #4a5393;
+                     background-color: #f7f5ff;
+                  }
+               }
+            }
+            .breedCustomOverlay {
+               position: absolute;
+               top: 0;
+               width: 100%;
+               height: 100%;
+               border-radius: 9px;
+               border: dotted 1.3px rgba(154, 85, 251, 0.6);
+               background-color: #f5fafe;
+               padding: 6px;
+
+               .overlaybg {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 100%;
+                  background-color: white;
+                  img {
+                     width: 14px;
+                     height: 14px;
+                  }
+                  p {
+                     margin-left: 8px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+.breedError {
+   @media (max-width: 767px) {
+      margin-top: 10px !important;
+   }
+}
+.reUpload {
+   cursor: pointer;
+   // display: none;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 24px;
+   p {
+      display: none;
+   }
+   &:hover {
+      background-color: #3b3838e3;
+      @include flex(center, center, row);
+      border-radius: 24px;
+      p {
+         display: block;
+         margin-bottom: 0;
+         color: #ffb703;
+         @include text-font('Glory-Medium', 16px, #ffb703);
+         @include text-style(500, normal, 0.16px);
+      }
+   }
+}

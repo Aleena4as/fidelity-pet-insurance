@@ -1,0 +1,35 @@
+.mainLoader {
+   height: 100vh;
+   background-image: url('/images/version2/loadingBg.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   @include flex(center, center, column);
+   @media (max-width: 767px) {
+      padding: 0 20px;
+   }
+   img {
+      width: 302px;
+      height: 232px;
+      border-radius: 50%;
+      @media (max-width: 767px) {
+         width: 270px;
+         height: 230px;
+         border-radius: 50%;
+      }
+   }
+   p {
+      @include text-font('GloriaHallelujah-Regular', 18px, #333);
+      @include text-style(normal, normal, 0.72px);
+      font-family: 'GloriaHallelujah-Regular';
+      @include align(center);
+      line-height: 1.46;
+      @media (max-width: 767px) {
+         width: auto;
+      }
+      width: 391px;
+      margin-top: 27px;
+      @media (min-width: 768px) {
+         font-size: 24px;
+      }
+   }
+}

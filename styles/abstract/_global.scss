@@ -1,0 +1,94 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   box-sizing: border-box;
+}
+
+.password-icon {
+   position: absolute;
+   bottom: 10px;
+   right: 4.5px;
+   background-image: url('../../public/images/password-icon.svg');
+   background-repeat: no-repeat;
+   width: 21px;
+   height: 14px;
+   cursor: pointer;
+}
+
+.email-icon {
+   position: absolute;
+   bottom: 10px;
+   right: 6px;
+   background-image: url('../../public/images/email-icon.svg');
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 15px;
+}
+.contentCenter {
+   @include flex(center, center, row);
+}
+
+// calendar edits
+.react-datepicker-popper {
+   z-index: 2 !important;
+}
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+   background-color: #9a55fb !important;
+}
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+   @include text-font('Glory-Medium', 16px, #fff);
+   @include text-style(500, normal, 0.16px);
+   color: #fff !important;
+   margin-bottom: 8px;
+}
+.react-datepicker__day-name,
+.react-datepicker__time-name,
+.react-datepicker__year-read-view--selected-year {
+   color: #fff !important;
+}
+.react-datepicker__header {
+   background-color: #ffb703 !important;
+   border-bottom: 1px solid #ffc32c !important;
+}
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+   border-color: #fff !important;
+}
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+   background-color: #fff;
+}
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+   background-color: #9a55fb !important;
+}
+.react-datepicker__header__dropdown--select {
+   select {
+      word-wrap: normal;
+      border: 1px solid #9a55fb;
+      padding: 4px;
+      border-radius: 6px;
+      text-align: center;
+      @include text-font('Glory-Medium', 16px, #333);
+      @include text-style(500, normal, 0.16px);
+      background-color: #ffffff;
+   }
+}
+.react-datepicker__day {
+   @include text-font('Glory-Medium', 16px, #333);
+   @include text-style(500, normal, 0.16px);
+}
+.react-datepicker__day-name {
+   @include text-font('Glory-Medium', 16px, #fff);
+   @include text-style(500, normal, 0.16px);
+}

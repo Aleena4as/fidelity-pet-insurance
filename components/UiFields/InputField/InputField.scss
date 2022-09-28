@@ -1,0 +1,60 @@
+.form-group {
+   margin-bottom: 38px !important;
+
+   .form-control {
+      border-radius: 9px;
+      border: solid 2.3px rgba(50, 56, 98, 0.2);
+      background-color: #fff;
+      padding-left: 20px;
+      box-shadow: 9px 7px 2px 0px rgb(154 85 251 / 10%);
+      height: 56px;
+      @include text-font('Glory-Medium', 16px, #333);
+      @include text-style(500, normal, 0.32px);
+      &:focus {
+         outline: 0;
+         box-shadow: 9px 7px 2px 0px rgb(154 85 251 / 10%);
+         border: solid 2.3px #4a5393;
+         background-color: #f0eeff;
+      }
+      // &::-webkit-input-placeholder {
+      //    @include text-font('Glory-Regular', 19px, red);
+      //    @include text-style(bold, normal, 0.38px);
+      //    @include align(center);
+      //    color: #fff;
+      // }
+
+      // &:-ms-input-placeholder {
+      //    @extend ::-webkit-input-placeholder;
+      // }
+
+      // &::placeholder {
+      //    @extend ::-webkit-input-placeholder;
+      // }
+   }
+}
+.errorMessage {
+   @include text-font('Glory-Regular', 14px, red);
+   @include text-style(bold, normal, 0.8px);
+   @include align(justify);
+   margin-top: -30px;
+   margin-bottom: 20px;
+}
+.successMessage {
+   @extend .errorMessage;
+   @include text-font('Glory-Regular', 14px, green);
+}
+input[type='text']:disabled {
+   background: #fff;
+   cursor: not-allowed;
+}
+span.labelInside {
+   position: absolute;
+   top: 19px;
+   left: 20px;
+   z-index: 1;
+   @include text-font('Glory-Medium', 16px, #333);
+   @include text-style(500, normal, 0.32px);
+}
+.inputwithLabelInside {
+   padding-left: 100px !important;
+}

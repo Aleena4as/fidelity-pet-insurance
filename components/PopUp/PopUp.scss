@@ -1,0 +1,96 @@
+@keyframes customEnterOverlayAnimation {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes customLeaveOverlayAnimation {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(0);
+   }
+}
+
+@keyframes customEnterModalAnimation {
+   0% {
+      transform: scale(0.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes customLeaveModalAnimation {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(0.2);
+   }
+}
+
+// animations ends
+
+.react-responsive-modal-modal {
+   border-radius: 23px;
+   max-width: 517px;
+   @media (min-width: 768px) {
+      padding: 33px;
+   }
+   // @media (max-width: 768px) {
+   //    width: 380px;
+   //    margin: 0;
+   // }
+   @media (max-width: 360px) {
+      width: 300px;
+      margin: 0;
+   }
+   // max-height: 406px;
+   overflow-y: visible !important;
+}
+.react-responsive-modal-closeButton {
+   position: absolute;
+   top: 30px !important;
+   right: 35px !important;
+}
+
+.react-responsive-modal-container {
+   height: 100%;
+   outline: 0;
+   overflow-x: hidden;
+   @media (min-width: 768px) {
+      overflow-y: hidden !important;
+   }
+
+   text-align: center;
+}
+.react-responsive-modal-overlay {
+   background-image: url(/images/version2/modalBackground-Pattern.svg) !important;
+   background-color: #ffb600 !important;
+   position: relative;
+   // &::after {
+   //    content: url(/images/version2/animations/walkingCat.gif);
+   //    position: absolute;
+   //    top: 265px;
+   //    animation: linear infinite;
+   //    animation-name: run;
+   //    animation-duration: 10s;
+   //    -webkit-animation: linear infinite;
+   //    -webkit-animation-name: run;
+   //    -webkit-animation-duration: 10s;
+   // }
+}
+// .react-responsive-modal-containerCenter::after {
+//    content: url(/images/version2/animations/walkingCat.gif);
+//    position: absolute;
+//    top: 265px;
+//    animation: linear infinite;
+//    animation-name: run;
+//    animation-duration: 10s;
+//    -webkit-animation: linear infinite;
+//    -webkit-animation-name: run;
+//    -webkit-animation-duration: 10s;
+// }

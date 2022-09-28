@@ -1,0 +1,48 @@
+.uploadImg-Wrap {
+   width: 100%;
+   max-height: 262px;
+   height: 262px;
+   border-radius: 25px;
+   border: dashed 2px rgba(130, 130, 197, 0.6);
+   background-color: transparent;
+   padding: 5px;
+   cursor: pointer;
+   //    background-image: url(/images/version2/uploadPanelBg.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin: 0 0 30px;
+   label {
+      border-radius: 25px;
+      background-color: #ffffff;
+      background-image: url(/images/version2/uploadPanelBg.svg);
+
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 0;
+      cursor: pointer;
+      img.uploadedFile {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+         cursor: pointer;
+         border-radius: 25px;
+      }
+      p {
+         // margin-top: 26px;
+         margin-bottom: 0;
+         @include text-font('GloriaHallelujah-Regular', 14px, #333);
+         @include text-style(normal, normal, 0.28px);
+         @include align(center);
+         line-height: 1.36;
+         span {
+            color: rgba(51, 51, 51, 0.25);
+         }
+      }
+   }
+}

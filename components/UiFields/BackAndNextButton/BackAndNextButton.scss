@@ -1,0 +1,35 @@
+.buttonWrap {
+   @include flex(center, space-around, column);
+   @media (min-width: 768px) {
+      flex-direction: row;
+   }
+   button {
+      width: auto;
+      height: 58px;
+      outline: none;
+      margin: 10px;
+      @include text-font('Glory-SemiBold', 16px, #fff);
+      @include text-style(600, normal, 1px);
+      @include align(center);
+      @media (min-width: 768px) {
+         width: 125px;
+         height: 58px;
+         flex-direction: row;
+      }
+   }
+   .nextButton {
+      width: 220px;
+      height: 60px;
+      border-radius: 70px;
+      background-color: #9a55fb;
+      border: solid 1px #9a55fb;
+   }
+   .backButton {
+      width: 220px;
+      height: 60px;
+      border-radius: 70px;
+      border: solid 1px #9a55fb;
+      background-color: #fff;
+      color: #333333;
+   }
+}

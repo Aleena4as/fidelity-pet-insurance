@@ -1,0 +1,197 @@
+.ourPartners-Wrap {
+   background-image: url(/images/partners/ourpartnerBg.svg);
+   @media (max-width: 767px) {
+      background-image: url(/images/partners/respOurpartnerBg.svg);
+   }
+   background-size: contain;
+   background-repeat: no-repeat;
+   max-width: 1342.9px;
+   height: 659.2px;
+   padding: 20px;
+   margin: 61px auto;
+   background-position: center;
+   @media (max-width: 767px) {
+      min-height: 718.3px;
+      width: auto;
+   }
+}
+.partnersContainer {
+   margin-top: 73px;
+   @media (max-width: 767px) {
+      margin-top: 60px;
+      height: auto;
+      width: auto;
+   }
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   .slick-next:before,
+   [dir='rtl'] .slick-prev:before {
+      content: url(/images/partners/slickArrowRight.svg);
+   }
+   .slick-arrow {
+      z-index: 99;
+   }
+   .slick-prev:before {
+      content: url(/images/partners/slickArrowLeft.svg);
+   }
+   .slick-dots li.slick-active button:before {
+      opacity: 0.75;
+      color: #9a55fb;
+   }
+   .slick-dots li button:before {
+      font-size: 15px;
+      @media (max-width: 767px) {
+         font-size: 9px;
+      }
+      color: #9a55fb;
+   }
+   .slick-dots {
+      bottom: -80px;
+      @media (max-width: 767px) {
+         bottom: -50px;
+      }
+   }
+   .slick-dots li {
+      margin: 0;
+   }
+   .partners-Slider {
+      margin-top: 52px;
+      //   padding: 52px 50px 40px;
+
+      //   @media (max-width: 767px) {
+      //      padding: 52px 0 40px;
+      //   }
+   }
+   .slick-next {
+      @media (max-width: 767px) {
+         right: 4px;
+      }
+      top: 70px;
+   }
+   .slick-prev {
+      @media (max-width: 767px) {
+         left: 4px;
+      }
+      top: 70px;
+   }
+   .slick-next,
+   .slick-prev {
+      width: auto;
+      height: auto;
+   }
+   .content-Body {
+      text-align: center;
+      width: 267px;
+      margin: 0 auto;
+      p {
+         font-family: 'Glory-ExtraBold';
+         font-size: 38px;
+         font-weight: 800;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: 1px;
+         color: #333;
+         background-image: url(/images/version2/splash/howWorksSplash.svg);
+         background-repeat: no-repeat;
+      }
+   }
+   .partners-Quote {
+      margin: 0 auto;
+      width: 773px;
+      max-width: 773px;
+      @media (max-width: 768px) {
+         height: auto;
+         width: auto;
+         font-size: 16px;
+      }
+      font-family: 'Glory-Light';
+      font-size: 18px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: rgba(51, 51, 51, 0.9);
+   }
+   .partners-Wrap {
+      position: relative;
+      margin-top: 10px;
+      margin-left: 12px;
+      .banner {
+         position: absolute;
+         width: 74px;
+         height: 24px;
+         top: -10px;
+         background-color: #9a55fb;
+         left: 38%;
+         transform: skewX(-15deg);
+         border-radius: 5px;
+         p {
+            font-family: 'Glory-MediumItalic';
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: normal;
+            letter-spacing: 0.14px;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+         }
+      }
+      .content-box {
+         width: 244px;
+         height: 124px;
+         background-image: url(/images/partners/partnerBgBox.png);
+         background-repeat: no-repeat;
+         background-size: contain;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+         //  margin-left: 20px;
+         //  @media (max-width: 767px) {
+         //     margin-right: 0;
+         //  }
+         img {
+            width: auto;
+            height: auto;
+            max-width: 144px;
+            max-height: 80px;
+            margin-left: -20px;
+         }
+      }
+      h3 {
+         font-family: 'Glory-Medium';
+         font-size: 16px;
+         font-weight: 500;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: 0.64px;
+         text-align: center;
+         color: #222;
+         margin: 16px 0 8px;
+      }
+      h4 {
+         font-family: 'Glory-Regular';
+         font-size: 16px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: 0.48px;
+         text-align: center;
+         color: #666;
+         margin-bottom: 0;
+      }
+   }
+}

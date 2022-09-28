@@ -1,0 +1,67 @@
+.paymentWrap {
+   width: auto;
+   padding: 10px;
+   margin: 0px auto;
+   @media (min-width: 768px) {
+      width: 548px;
+      // margin: 108px auto 35px;
+   }
+   min-height: 299px;
+   border-radius: 32px;
+   background-color: #fff;
+   @include flex(center, center, row);
+   // box-shadow: 0px 4px 7px 0px #8f8e8e4a;
+   .paymentButtonWrap {
+      @media (min-width: 768px) {
+         padding: 38px;
+      }
+      padding: 40px 25px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 32px;
+      button.paybtns {
+         width: 100%;
+         height: 54px;
+         object-fit: contain;
+         border-radius: 70px;
+         border: solid 1px #9a55fb;
+         outline: none;
+         @include text-font('Glory-SemiBold', 16px, #fff);
+         @include text-style(600, normal, 1px);
+         &.payNowbtn {
+            background-color: #9a55fb;
+            margin-bottom: 16px;
+         }
+         &.payLaterbtn {
+            background-color: #fff;
+            color: #333;
+         }
+      }
+   }
+   .paymentIframe {
+      border: none;
+      width: 100%;
+      height: 515px;
+      @media (min-width: 768px) {
+         width: 463px;
+         height: 667px;
+      }
+   }
+}
+// iframe {
+//    .paymentIframe {
+//       background-color: #fff !important;
+//    }
+//    body {
+//       background-color: red !important;
+//    }
+//    footer .pt_footer {
+//       display: none !important;
+//    }
+// }
+.paymentWaitingNote {
+   padding: 20px;
+   @include text-font('Glory-Regular', 16px, $color: red);
+   @include text-style(bold, normal, 0.7px);
+   @include align(center);
+}

@@ -1,0 +1,47 @@
+.alertPanel {
+   @include flex(center, center, column);
+   max-width: 573px;
+   width: auto;
+   margin: 72px auto 35px;
+   @media (min-width: 767px) {
+      padding: 47px;
+   }
+   border-radius: 32px;
+   background-color: #fff;
+   padding: 15px;
+   img {
+      margin-bottom: 15px;
+   }
+   p.noteTitle {
+      @include text-font('GloriaHallelujah-Regular', 20px, #333);
+      @include text-style(normal, normal, 0.2px);
+      @include align(center);
+      margin-bottom: 12px;
+   }
+
+   p.note {
+      @include text-font('Glory-Light', 18px, #333);
+      @include text-style(300, normal, 0.18px);
+      @include align(center);
+      line-height: 1.39;
+      margin-bottom: 40px;
+      @media (min-width: 767px) {
+         min-width: 400px;
+      }
+   }
+   .gifBg {
+      width: 108px;
+      height: 108px;
+      background-image: url(/images/version2/thanksGifBg.svg);
+      background-repeat: no-repeat;
+      @include flex(center, center, column);
+      margin-bottom: 12px;
+
+      img {
+         border-radius: 50%;
+         width: 85px;
+         height: 88px;
+         margin-bottom: 0;
+      }
+   }
+}

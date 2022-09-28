@@ -1,0 +1,18 @@
+.pagination {
+   justify-content: center;
+}
+.page-link {
+   color: #9a55fb !important;
+   &:hover {
+      border: 1px solid #dee2e6;
+      color: #ffb703 !important;
+   }
+   &:focus {
+      box-shadow: 0 0 0 0 #ffffff !important;
+      color: #ffb703 !important;
+   }
+}
+.isActive {
+   background-color: #e9ecef !important;
+   color: #ffb703 !important;
+}

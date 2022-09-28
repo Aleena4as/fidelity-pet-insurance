@@ -1,0 +1,9 @@
+.formTitle {
+   margin-bottom: 24px;
+   margin-top: 10px;
+   p {
+      @include text-font("GloriaHallelujah-Regular", 18px, #333);
+      @include text-style(normal, normal, 0.18px);
+      margin-bottom: 0;
+   }
+}

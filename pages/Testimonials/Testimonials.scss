@@ -1,0 +1,210 @@
+// The slider will fit any size container, lets go full screen...
+.testimonialContainer {
+   // margin-top: 135px;
+   margin-bottom: 30px;
+   position: relative;
+   @media (max-width: 767px) {
+      min-height: 1000px;
+   }
+   height: auto;
+   width: 100vw;
+   background-image: url(/images/version2/respTestimonialsBg.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   @media (min-width: 768px) {
+      height: 628px;
+      max-height: 628px;
+      background-image: url(/images/version2/testimonialsBg.svg);
+   }
+   .SliderWrapper {
+      overflow: visible;
+   }
+   .testimonialDescription {
+      @include flex(center, center, column);
+      @include align(center);
+      height: 100%;
+      @media (max-width: 991px) and (min-width: 768px) {
+         margin-left: 50px;
+      }
+      @media (min-width: 992px) {
+         align-items: flex-start;
+         max-width: 498px;
+         @include align(left);
+         margin-left: 150px;
+      }
+      @media (max-width: 1025px) and (min-width: 1024px) {
+         margin-left: 100px;
+      }
+      img {
+         margin-bottom: 25px;
+         @media (min-width: 992px) {
+            padding-top: 50px;
+         }
+      }
+      .meetCustomer {
+         @include text-font('Glory-ExtraBold', 34px, #fff);
+         @include text-style(800, normal, normal);
+         @include align(center);
+         margin-bottom: 0;
+         @media (min-width: 768px) {
+            @include align(left);
+            font-size: 38px;
+         }
+         span {
+            color: #ffb703;
+            position: relative;
+            &:before {
+               content: url(/images/version2/splash/customerSplash.svg);
+               position: absolute;
+               top: 0px;
+               left: -18px;
+               @media (max-width: 767px) {
+                  top: -2px;
+                  left: -34px;
+               }
+            }
+         }
+      }
+      .testimonialContent {
+         @include text-font('Glory-Medium', 19px, rgba(255, 255, 255, 0.9));
+         @include text-style(500, normal, 1px);
+         @include align(center);
+         @media (min-width: 768px) {
+            @include align(left);
+         }
+
+         line-height: 1.26;
+         margin-top: 22px;
+         @media (min-width: 768px) {
+            margin-top: 38px;
+         }
+      }
+   }
+   .customerProfile {
+      position: relative;
+      width: 376px;
+      height: 100% !important;
+      // margin-bottom: 50px;
+
+      @media (max-width: 991px) and (min-width: 768px) {
+         width: 300px;
+      }
+      @media (max-width: 767px) {
+         margin-top: 155px;
+         width: 325px;
+      }
+      @media (min-width: 992px) {
+         height: 500px;
+      }
+      @media (max-width: 375px) and (min-height: 400px) {
+         margin-top: 200px;
+      }
+
+      background-color: #fff;
+      border-radius: 23px;
+      transform: rotate(5deg);
+      padding: 10px 10px 20px;
+      img {
+         border-radius: 12px;
+         object-fit: cover;
+         object-position: right;
+         @media (max-width: 767px) {
+            width: 280px;
+            height: auto;
+            position: relative;
+            top: -4px;
+         }
+
+         @media (min-width: 992px) {
+            width: 350px;
+            height: 500px;
+            position: absolute;
+            top: 10px;
+         }
+         @media (max-width: 1025px) and (min-width: 1024px) {
+            position: absolute;
+            top: -104px;
+            left: -40px;
+         }
+      }
+      .petName {
+         position: absolute;
+         bottom: 0;
+         font-family: 'GloriaHallelujah-Regular';
+         font-size: 14px;
+         color: #333;
+         font-weight: bold;
+         font-stretch: normal;
+         line-height: normal;
+         letter-spacing: 0.28px;
+         text-align: center;
+         line-height: 1.36;
+         text-transform: capitalize;
+         @media (max-width: 767px) {
+            bottom: -12px;
+         }
+      }
+   }
+   .testimonialArrow {
+      font-size: 2rem;
+      z-index: 1;
+      cursor: pointer;
+      position: absolute;
+      bottom: 70px;
+      @media (max-width: 992px) {
+         width: 34px;
+         height: 25px;
+      }
+      img {
+         @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+         }
+      }
+
+      @media (min-width: 768px) {
+         top: 50%;
+      }
+      &[disabled] {
+         opacity: 0.5;
+      }
+      &.btnPrev {
+         left: 50px;
+      }
+      &.btnNext {
+         right: 50px;
+      }
+   }
+   .slide-inner {
+      height: 100% !important;
+   }
+   // .slide-outer {
+   //    overflow-x: hidden;
+   // }
+   .SlideStyles div {
+      @media (max-width: 767px) {
+         height: 100% !important;
+      }
+   }
+}
+.dotContainer {
+   display: flex;
+   position: relative;
+   justify-content: center;
+   @media (min-width: 768px) {
+      bottom: 50px;
+   }
+   @media (max-width: 576px) {
+      display: none;
+   }
+   p {
+      width: 10px;
+      height: 10px;
+      background-color: #b37cff;
+      margin: 4px;
+      border-radius: 50%;
+   }
+   .showActiveDot {
+      background-color: #ffffff;
+   }
+}

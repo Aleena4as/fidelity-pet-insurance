@@ -1,0 +1,12 @@
+
+.sectionTitle{
+    // padding-top: 60px;
+    position: relative;
+    padding-bottom: 38px;
+    p{
+        @include text-font("Glory-ExtraBold", 38px, #333);
+        @include text-style(800,  normal, 1px);
+        margin-bottom: 0;
+        z-index: 1;
+    }
+}

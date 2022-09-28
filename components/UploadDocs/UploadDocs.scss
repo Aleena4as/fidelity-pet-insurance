@@ -1,0 +1,44 @@
+// Note
+// reusing the styles  from uploadImage.scss and extra scss below
+
+.uploadImg-Wrap {
+   position: relative;
+   label {
+      p.uploadDocPara {
+         margin-top: 14px;
+         max-width: 203px;
+         @include text-font('GloriaHallelujah-Regular', 14px, #333);
+         @include text-style(normal, normal, 0.28px);
+         @include align(center);
+         line-height: 24px;
+      }
+   }
+   .reUploadScreen {
+      display: flex;
+      position: absolute;
+      height: 96%;
+      width: 96%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      cursor: pointer;
+      p {
+         display: none;
+      }
+      &:hover {
+         background-color: #3b3838e3;
+         @include flex(center, center, row);
+         border-radius: 24px;
+         p {
+            display: block;
+            margin-bottom: 0;
+            color: #ffb703;
+            @include text-font('Glory-Medium', 16px, #ffb703);
+            @include text-style(500, normal, 0.16px);
+         }
+      }
+   }
+}
+.errorPanel {
+   padding-top: 10px;
+}

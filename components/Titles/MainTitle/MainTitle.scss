@@ -1,0 +1,86 @@
+.mainTitle {
+   //    padding-top: 80px;
+   //    padding-bottom: 38px;
+   position: relative;
+   p {
+      @include text-font('Glory-ExtraBold', 38px, #333);
+      @include text-style(800, normal, 0.76px);
+      margin-bottom: 8px;
+      @media (max-width: 767px) {
+         font-size: 24px;
+      }
+      z-index: 1;
+   }
+
+   // img {
+   //    position: absolute;
+   //    top: -8px;
+   //    left: 39%;
+   // }
+   &.greyBox {
+      &::after {
+         content: url(/images/version2/splash/reshowWorksSplash.svg);
+         position: absolute;
+         top: -14px;
+         right: -28px;
+         @media (min-width: 767px) {
+            content: url(/images/version2/splash/howWorksSplash.svg);
+            top: -14px;
+            right: -26px;
+         }
+      }
+   }
+   &.colouredLeft {
+      p {
+         font-size: 38px;
+         @include align(left);
+         color: #fb8500;
+         margin-bottom: 48px;
+         @media (max-width: 767px) {
+            font-size: 24px;
+         }
+      }
+      &::after {
+         content: url(/images/version2/splash/RespetInsuranceSplash.svg);
+         position: absolute;
+         top: -7px;
+         right: -32px;
+         @media (min-width: 767px) {
+            content: url(/images/version2/splash/petInsuranceSplash.svg);
+            top: -10px;
+            right: -35px;
+         }
+      }
+   }
+   &.colouredCenter {
+      p {
+         font-size: 38px;
+         @include align(center);
+         color: #fb8500;
+         width: fit-content;
+         margin: 0 auto 48px;
+         @media (max-width: 767px) {
+            font-size: 24px;
+         }
+      }
+      &::after {
+         content: url(/images/version2/splash/questionSplash.svg);
+         position: absolute;
+         top: -10px;
+         right: 22%;
+
+         @media (min-width: 768px) and (max-width: 991px) {
+            top: 0;
+            right: calc(44% - 10px);
+         }
+         @media (min-width: 992px) {
+            top: 0;
+            right: calc(44% - 10px);
+         }
+         @media (min-width: 1920px) {
+            top: 0;
+            right: calc(46% - 10px);
+         }
+      }
+   }
+}

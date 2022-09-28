@@ -1,0 +1,60 @@
+//Global Styles
+
+@import './abstract/mixins';
+@import './abstract/variables';
+@import './abstract/global';
+@import './abstract/general';
+
+//Pages
+// @import "../layout/LoginPage/LoginPage.scss";
+@import '../components/RequestQuote/RequestQuote.scss';
+@import '../components/QuickQuote/QuickQuote.scss';
+@import '../components/RequestHelp/RequestHelp.scss';
+@import '../components/Payment/Payment.scss';
+@import '../pages/Footer/Footer.scss';
+@import '../pages/About/About.scss';
+@import '../pages/HowItWorks/HowItWorks.scss';
+@import '../pages/Testimonials/Testimonials.scss';
+@import '../pages/Partners/Partners.scss';
+
+// Layouts
+@import '../layout/InitialPageLoader/InitialPageLoader.scss';
+
+//Components
+// @import "../components/FormContainer/FormContainer.scss";
+// @import "../components/LoginForm/LoginForm.scss";
+@import '../components/UiFields/InputField/InputField.scss';
+@import '../components/UiFields/TextAreaInput/TextAreaInput.scss';
+@import '../components/UiFields/SelectField/SelectField.scss';
+@import '../components/UiFields/RadioInput/RadioInput.scss';
+@import '../components/UiFields/CalenderInput/CalendarInput.scss';
+@import '../components//UiFields//EditInput/EditInput.scss';
+@import '../components/ButtonSwitch/ButtonSwitch.scss';
+@import '../components/Titles/MainTitle/MainTitle.scss';
+@import '../components/Titles/ContentTitle/ContentTitle.scss';
+@import '../components/Titles/FormTitle/FormTitle.scss';
+@import '../components/Titles/SectionTitle/SectionTitle.scss';
+@import '../components/TableResponsive/TableResponsive.scss';
+@import '../components/UiFields/Buttons/Buttons.scss';
+@import '../components/ContentStepper/ContentStepper.scss';
+@import '../components/UploadImage/UploadImage.scss';
+@import '../components/Card/Card.scss';
+@import '../components/UploadDocs/UploadDocs.scss';
+@import '../components/PopUp/PopUp.scss';
+@import '../components/UiFields/BackAndNextButton/BackAndNextButton.scss';
+@import '../components/Accordion/Accordion.scss';
+@import '../components/NavResponsive/NavResponsive.scss';
+@import '../components/NavWeb/NavWeb.scss';
+@import '../components/MainScreen/MainScreen.scss';
+@import '../components/UiFields/RadioImage/RadioImage.scss';
+@import '../components/PetDetectionForm/PetDetectionForm.scss';
+@import '../components/PopUp/PopUp.scss';
+@import '../components/ThankYouNote/ThankYouNote.scss';
+@import '../components/CapturedInfo/CapturedInfo.scss';
+@import '../components/Loader/Loader.scss';
+@import '../components/AlertPage/AlertPage.scss';
+@import '../components/Spin/Spin.scss';
+@import '../components/QuoteStatusDetails/QuoteStatusDetails.scss';
+@import '../components/QuoteStatus/Quotestatus.scss';
+@import '../components/Pagination/Pagination.scss';
+@import '../components/PromoCode/PromoCode.scss';

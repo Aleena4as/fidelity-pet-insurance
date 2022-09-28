@@ -1,0 +1,10 @@
+.contentTitle {
+   // padding-top: 60px;
+   padding-bottom: 38px;
+   p {
+      @include text-font('GloriaHallelujah-Regular', 18px, #333);
+      @include text-style(normal, normal, 0.18px);
+      @include align(left);
+      margin-bottom: 0;
+   }
+}
